@@ -3,7 +3,7 @@ DELIMITER $$
 DROP procedure IF EXISTS `getUserByGUID`;
 
 CREATE PROCEDURE `getUserByGUID`(
-	IN guid VARCHAR(255)
+	IN `guid` VARCHAR(255)
 )
 BEGIN
     SELECT *

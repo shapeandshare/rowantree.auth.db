@@ -3,12 +3,12 @@ DELIMITER $$
 DROP procedure IF EXISTS `createUserByGUID`;
 
 CREATE PROCEDURE `createUserByGUID`(
-	IN guid VARCHAR(255),
-	IN username VARCHAR(16),
-	IN email VARCHAR(255),
-	IN hashed_password VARCHAR(255),
-    IN disabled TINYINT(4),
-	IN admin TINYINT(4)
+	IN `guid` VARCHAR(255),
+	IN `username` VARCHAR(16),
+	IN `email` VARCHAR(255),
+	IN `hashed_password` VARCHAR(255),
+    IN `disabled` TINYINT(4),
+	IN `admin` TINYINT(4)
 )
 BEGIN
 

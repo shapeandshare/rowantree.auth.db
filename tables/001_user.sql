@@ -1,9 +1,9 @@
 CREATE TABLE IF NOT EXISTS `user` (
     `user_id` int(11) NOT NULL AUTO_INCREMENT,
     `guid` varchar(255) CHARACTER SET utf8 NOT NULL,
-    `username` varchar(16) CHARACTER SET utf8 NOT NULL,
-    `email` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
-    `hashed_password` varchar(255) CHARACTER SET utf8 NOT NULL,
+    `username` varchar(512) CHARACTER SET utf8 NOT NULL,
+    `email` varchar(1024) CHARACTER SET utf8 DEFAULT NULL,
+    `hashed_password` varchar(1024) CHARACTER SET utf8 NOT NULL,
     `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `disabled` tinyint(4) DEFAULT 1,
     `admin` tinyint(4) DEFAULT 0,

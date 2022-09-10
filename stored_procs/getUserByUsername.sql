@@ -3,7 +3,7 @@ DELIMITER $$
 DROP procedure IF EXISTS `getUserByUsername`;
 
 CREATE PROCEDURE `getUserByUsername`(
-	IN `username` VARCHAR(16)
+	IN `username` VARCHAR(512)
 )
 BEGIN
     SELECT *
